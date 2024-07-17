@@ -38,10 +38,17 @@ short_description: Create or update a layer3_net category to an object
 '''
 
 EXAMPLES = r'''
-- name: Create a new Net
+- name: Create a new IPv4 (type=1) Network
   scaleuptechnologies.idoit.idoit_cat_layer3_net:
     address: 10.0.10.0
-    cidr_suffix": 24
+    cidr_suffix: 24
+    idoit: '{{ idoit_access }}'
+    obj_id: 1320
+    type: 1
+- name: Create a new IPv6 (type=1000) Network
+  scaleuptechnologies.idoit.idoit_cat_layer3_net:
+    address: '2001:db8::'
+    cidr_suffix: 32
     idoit: '{{ idoit_access }}'
     obj_id: 1320
     type: 1
@@ -86,8 +93,8 @@ fields:
     description: Description of the Layer2 Net
     type: html
   type:
-    description: Typ
-    description_id: Id of Typ
+    description: Type
+    description_id: Id of Type
     type: dialog
 single_value_cat: true
 

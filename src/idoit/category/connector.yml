@@ -8,7 +8,10 @@ fields:
   type:
     type: int
     ansible_name: in_or_output
-    description:  input (1) or output (2)
+    description: input (1) or output (2)
+  assigned_connector:
+    type: int
+    description: ID of the assinged connector
   connection_type:
     type: dialog
     description: Schuko, ...
