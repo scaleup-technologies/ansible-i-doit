@@ -54,8 +54,8 @@ fields:
     description: Description of the Layer2 Net
     type: html
   type:
-    description: Typ
-    description_id: Id of Typ
+    description: Type
+    description_id: Id of Type
     type: dialog
 single_value_cat: true
 

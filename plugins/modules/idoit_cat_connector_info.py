@@ -44,6 +44,9 @@ data:
 IDOIT_SPEC = r'''
 category: C__CATG__CONNECTOR
 fields:
+  assigned_connector:
+    description: ID of the assinged connector
+    type: int
   connection_type:
     description: Schuko, ...
     description_id: Id of connection_type
