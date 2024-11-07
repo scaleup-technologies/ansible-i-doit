@@ -27,6 +27,10 @@ options:
   description:
     description: Description of the Model
     type: str
+  dns_search_domains:
+    description: DNS Search Domain
+    elements: str
+    type: list
   dns_server_id:
     description: Id of the DNS Server
     type: int
@@ -136,6 +140,11 @@ fields:
   description:
     description: Description of the Model
     type: html
+  dns_domain:
+    ansible_name: dns_search_domains
+    description: DNS Search Domain
+    element_type: str
+    type: list
   dns_server:
     ansible_name: dns_server_id
     description: Id of the DNS Server
