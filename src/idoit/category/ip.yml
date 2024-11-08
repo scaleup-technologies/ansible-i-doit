@@ -49,10 +49,11 @@ fields:
     description: Id of the DNS Server
 #  aliases:
 #    type n2m
-#  dns_domain:
-#    ansible_name: dns_search_domains
-#    type: list
-#    description: DNS Search Domain
+  dns_domain:
+    ansible_name: dns_search_domains
+    type: list
+    element_type: str
+    description: DNS Search Domain
   assigned_port:
     type: int
     ansible_name: assigned_port_id
